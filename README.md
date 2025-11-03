@@ -1,12 +1,17 @@
-# MapOps — Versioned Package
-This ZIP contains your uploaded homepage (as index.html) and the new Why MapOps page.
+# MapOps — Generic GitHub Pages Package
+Upload these files to a fresh repo and enable GitHub Pages.
 
 ## Files
-- `index.html` — from your uploaded `index_TAGLINE_NEXT_TO_WHY.html` (unchanged layout).
-- `why.html` — robust Why page with inline lead form and links routing back to `index.html#...`.
+- `index.html` — homepage (from your uploaded build)
+- `why.html` — expanded Why MapOps page with inline demo form
+- `.nojekyll` — disables Jekyll processing (serves static files verbatim)
+- `404.html` — redirects any bad URL to the homepage
+- `README.md` — quick steps
 
-## Deploy
-1) Create a new repo (e.g., MapOps_vNext).
-2) Upload both files at the root.
-3) Enable GitHub Pages → Deploy from branch.
-4) Open: https://<username>.github.io/<repo>/
+## Publish
+1) Create a new repo (any name).  
+2) Upload all files at the repo root.  
+3) Settings → Pages → Deploy from branch (main), folder `/ (root)`.  
+4) Visit the URL GitHub shows on the Pages screen.
+
+Links are relative, so everything works at any repo path.
